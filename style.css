@@ -1,0 +1,86 @@
+:root {
+    --fond: #272635;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.fond{
+    background-color:var(--fond);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.boiteFormulaire {
+    width: 280px;
+    border-radius: 20px;
+    background-color: #f0BCD4;
+    position: relative;
+    top: 50%;
+    left:50%;
+    transform: translate (-50%, -50%);
+}
+
+.radio{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.formulaire{
+    padding: 20px;
+}
+
+#name{
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+p{
+    margin: 10px 0;
+    font-size: 20px;
+
+}
+
+#Choix{
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+#Jouer{
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+.nomJoueur {
+    position: absolute;
+    font-size: 50px;
+    text-align: center;
+    ;
+}
