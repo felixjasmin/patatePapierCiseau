@@ -9,35 +9,56 @@
     
 </head>
 <body>
+    <div id="wrapperResultat">
+            
+
+        <div class="resultat-joueur">
+            <h1 class="joueur nom" id="nom-joueur">Joueur</h1>
+            <div class="emojiJoueur"></div>
+        </div>  
+        <div class="resultat-cpu">
+            <h1 class="cpu nom" id="nom-cpu">CPU</h1>
+            <div class="emojiCpu"></div>
+        </div> 
+        <h1 class="resultat-final"></h1>
+        <button id="btn-rejouer">Rejouer</button>
+        
+    </div> 
     <div class="fond">
         <div class="boiteFormulaire">
+
             <div class=formulaire>
                 <p>Nom</p>
                 <br>
-                <input type="text" name="Nom" id="name">
+                <input type="text" id="name" required>
                 <br>
                 <p>Peau</p>
                 <br>
-                <div class="radio">
-                    <input type="radio" name="Peau" id="mainJaune">👋
-                    <input type="radio" name="Peau" id="mainBlanche">👋🏻
-                    <input type="radio" name="Peau" id="mainBalzane">👋🏽
-                    <input type="radio" name="Peau" id="mainNoire"> 👋🏿
+                <div class="choixRadio">
+                    <input type="radio" value="0" name="Peau" checked id="mainJaune">👋
+                    <input type="radio" value="1" name="Peau"  id="mainBlanche">👋🏻
+                    <input type="radio" value="2" name="Peau"  id="mainBalzane">👋🏽
+                    <input type="radio" value="3" name="Peau"  id="mainNoire"> 👋🏿
                 </div>
                 <br>
                  <p>Choix</p>
-                <select name="" id="Choix">
-                    <option value="roche">🥔</option>
-                    <option value="papier">📄</option>
-                    <option value="ciseau">✂️</option>
+                <select name="" id="arme">
+                    <option value="0">🥔</option>
+                    <option value="1">📄</option>
+                    <option value="2">✂️</option>
                 </select>
                 <br>
                 <br>
                 <input type="button" value="Jouer" id="Jouer">
 
             </div>
-    </div>  
-</div>
+        </div>
+    </div>
+       
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 <script src="javascript.js"></script>
 </body>
 </html>
+
+
+<!-- -->
