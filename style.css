@@ -1,5 +1,7 @@
 :root {
     --fond: #272635;
+    --fondJoueur:"";
+    --fondCpu:"";
 }
 
 * {
@@ -11,6 +13,7 @@
 body {
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 .fond{
@@ -29,10 +32,10 @@ body {
     position: relative;
     top: 50%;
     left:50%;
-    transform: translate (-50%, -50%);
+    transform:translate(-50%,-50%);
 }
 
-.radio{
+.choixRadio{
     display: flex;
     justify-content: space-around;
 
@@ -58,7 +61,7 @@ p{
 
 }
 
-#Choix{
+#arme{
     height: 40px;
     border-radius: 20px;
     border: 0;
@@ -78,9 +81,96 @@ p{
 
 
 
-.nomJoueur {
+.nom {
     position: absolute;
     font-size: 50px;
-    text-align: center;
-    ;
+    top: 15%;
+    left:50%;
+    transform: translateX(-50%);
+
+}
+
+
+#wrapperResulat{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+    color: #fff;
+
+}
+
+.resultat-joueur{
+   
+    width: 50%;
+    height: 100%;
+    background-color: var(--fondJoueur);
+    position: absolute;
+
+    /*justify-content: flex-start;*/
+
+}
+
+.resultat-cpu{
+    
+    width: 50%;
+    height: 100%;
+    background-color: var(--fondCpu);
+    position: absolute;
+    right: 0px;
+  /*  justify-content: flex-start;*/
+
+}
+
+.resultat-final{
+    position: absolute;
+    top: 85%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 50px;
+    left: 50%;
+
+  
+
+
+}
+
+#btn-rejouer{
+    position: absolute;
+    top:75%;
+    height: 40px;
+    border-radius:20px;
+    width: 150px;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size:20px;
+
+}
+
+
+.hideForm {
+    display: none;
+}
+
+
+.emojiJoueur{
+    position: absolute;
+    left:50%;
+    top:50%;
+    font-size : 80px;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.emojiCpu{
+    position: absolute;
+    left:50%;
+    top:50%;
+    font-size : 80px;
+    transform: translate(-50%, -50%);
+
+
 }
